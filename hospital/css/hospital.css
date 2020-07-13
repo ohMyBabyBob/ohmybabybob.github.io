@@ -1,0 +1,162 @@
+/*导航栏变化*/
+.topNav #all{
+	width:100px;
+	margin: 0;
+	padding: 0;
+	background-color:  #60bff2;
+}
+.topNav #hospital{
+	background-color: #1fa4f0;
+}
+/*条件筛选框*/
+.selectList{
+	background-color: #fbfbfb;
+	margin: 20px auto;
+}
+.selectList .group{
+	line-height:18px;
+	min-height: 20px;
+	font-size: 12px;
+	padding: 20px 30px;
+	/*padding撑开高度，直接写高度=行高，选中会特别难看。
+	另外font-size写在这里比较好，在底下分开写，选中时候会多出来字的内边儿很丑*/
+}
+.selectList .group .caption{
+	color:#434948;
+	display: inline-block;
+}
+.selectList .group .caption .condition{
+	margin-left: 40px;
+}
+.selectList .group .condition{
+	position: relative;
+	padding: 2px 5px;
+	margin:0 10px;
+	color:#434948;
+}
+.selectList .group .condition:after{
+	content:' ';
+	display:block;
+	position: absolute;
+	top:2px;
+	left:-13px;
+	width: 1px;
+	height: 18px;
+	background-color: #dcdddd;
+}
+.selectList .group .focus,
+.selectList .group .condition:hover{
+	background-color:#1fa4f0;
+	color:#fff;
+}
+/*显示框*/
+.showList .itemList .item{
+	height: 180px;
+	border:1px solid #f4f6fa;
+	border-bottom: none;
+}
+.itemList .item .itemCon{
+	margin:25px 15px;
+	position: relative;
+}
+.itemList .item .itemCon img{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 180px;
+	height: 130px;
+}
+.itemList .item .itemCon .itemWord{
+	position: absolute;
+	left:215px;
+	top:0;
+}
+.itemList .item .itemCon .itemWord .tit{
+	font-size: 15px;
+	height: 40px;
+	line-height: 40px;
+}
+.itemList .item .itemCon .itemWord span{
+	margin-left: 20px;
+	font-size: 11px;
+	color:#fecd09;
+}
+.itemList .item .itemCon .itemWord .detail div{
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+	color:#888888;
+	position: relative;
+	padding-left: 20px;
+}
+.itemList .item .itemCon .itemWord .detail div:before{
+	position: absolute;
+	top:5px;
+	left:0;
+	content:'';
+	display: block;
+	height:16px;
+	width: 16px;
+	background: url(../img/icon-tel.png) no-repeat 0 0;
+}
+.itemList .item .itemCon .itemWord .detail .area:before{
+	background-position-y: -18px;
+}
+.itemList .item .itemCon .itemWord .detail .tim:before{
+	background-position-y: -36px;
+}
+.itemList .item .itemCon .btn{
+	position: absolute;
+	top:50px;
+	right: 50px;
+	background: url(../img/button-now.png) no-repeat 0 0;
+	width: 105px;
+	height:50px;
+}
+/*页码*/
+.showList .pageList{
+	position: relative;
+	color: #555;
+	height:45px;
+	border:1px solid #f4f6fa;
+	text-align: center;
+	font-size: 15px;
+}
+.showList .pageList a{
+	display:inline-block;
+	margin:10px 6px;
+	color:#555;
+}
+.showList .pageList .num{
+	width: 22px;
+	height:22px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+.showList .pageList .prevBtn,
+.showList .pageList .nextBtn{
+	background: url(../img/icon-pagination-arrow.png) no-repeat 6px -15px;
+}
+.showList .pageList .nextBtn{
+	background-position-y: 4px;
+}
+.showList .pageList .inputText{
+	margin:10px 6px;
+	height:25px;
+	width: 50px;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
+.showList .pageList .inputBtn{
+	width:35px;
+	height:25px;
+	background: url(../img/icon-pagination-go.png) no-repeat 0 0;
+}
+.showList .pageList .focus,
+.showList .pageList .prevBtn:hover,
+.showList .pageList .nextBtn:hover{
+	background-color:#1fa4f0;
+	color:#fff;
+	background-position-x:-20px;
+}

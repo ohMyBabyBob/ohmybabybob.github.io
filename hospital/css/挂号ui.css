@@ -1,0 +1,228 @@
+/*搜索栏下拉菜单组件-----------------------------------------------------------------------*/
+.logo .search{
+	position: relative;
+}
+.logo .search .selected{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 55px;
+	height:38px;
+	padding-right: 14px;
+	line-height:38px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+.logo .search input{
+	position: absolute;
+	left: 75px;
+	top:4px;
+	width: 200px;
+	height: 30px;
+}
+.logo .search .submit{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 40px;
+	height: 38px;
+}
+.logo .search .select-list{
+	position: absolute;
+	left: 0;
+	top:38px;
+	box-shadow:3px 3px 5px rgba(0,0,0,.2);
+	z-index: 2;
+	display: none;
+}
+.logo .search .select-list a{
+	background-color: #fff;
+	display: block;
+	line-height: 25px;
+	width:69px;
+	font-size: 13px;
+	text-align: center;
+	color:#8a8a8a;
+}
+.logo .search .select-list a:hover{
+	background-color: #ebeef5;
+}
+/*分类导航菜单组件----------------------------------------------------------------*/
+.depart{
+	position: relative;
+}
+.depart .dep .menu-list{
+	position: absolute;
+	height: 383px;
+	width: 500px;
+	padding: 20px;
+	top:0;
+	left:190px;
+	background: url(../img/bg-menu.jpg) no-repeat;
+	box-shadow: 5px 5px 2px rgba(0,0,0,.1);
+	z-index:2;
+	display: none;
+}
+.menu-list .menu-list-group{
+	margin:10px;
+}
+.menu-list .menu-list-group .menu-list-title{
+	color: #666;
+	font-size: 16px;
+	font-weight: bold;
+}
+.menu-list .menu-list-group .menu-list-details a{
+ 	color:#8a8a8a;
+ 	margin-right: 8px;
+ }
+.menu-list .menu-list-group .menu-list-details a:after{
+	content:'|';
+	padding-left: 8px;
+	opacity: .5;
+}
+.depart .dep:hover{
+	background-color: #fff;
+}
+.depart .dep:hover .icon::before{
+	background-position-x:0;
+}
+.depart .dep:hover .icon,
+.depart .dep:hover .exm{
+	color:#666;
+}
+.depart .dep:hover .menu-list{
+	display: block;
+}
+.depart .dep:nth-child(2) .icon::before{
+	background-position-y:-22px;
+}
+.depart .dep:nth-child(3) .icon::before{
+	background-position-y:-44px;
+}
+.depart .dep:nth-child(4) .icon::before{
+	background-position-y:-66px;
+}
+.depart .dep:nth-child(5) .icon::before{
+	background-position-y:-88px;
+}
+.depart .dep:nth-child(6) .icon::before{
+	background-position-y:-110px;
+}
+.depart .dep:nth-child(7) .icon::before{
+	background-position-y:-132px;
+}
+.depart .dep:nth-child(8) .icon::before{
+	background-position-y:-154px;
+}
+.depart .dep:nth-child(9) .icon::before{
+	background-position-y:-176px;
+}
+.depart .dep:nth-child(10) .icon::before{
+	background-position-y:-198px;
+}
+/*选项卡组件*/
+.bottom .bottomLeft .bottomNav .bottom-focus,
+.bottom .bottomContent .selectNav .bottom-focus{
+	color:#fff;
+	background-color: #1fa4f0;
+}
+.bottom .bottomLeft .depcont,
+.top-content .sec2,
+.top-content .sec3,
+.top-content .sec4{
+	height: 450px;
+	display: none;
+}
+.bottomContent .selectContent .se2,.se3,.se4,.se5,.se6{
+	display: none;
+}
+.topNav,
+.bottomNav,
+.selectNav,
+.depart{
+	cursor: pointer;
+}
+/*回到顶部*/
+.backTop{
+	display:none;
+	position:fixed;
+	right:0;
+	bottom:100px;
+	height:40px;
+	width:40px;
+	z-index:9;
+	background:rgba(102,102,102,.9) url(../img/icon-go-up.png) center no-repeat;
+}
+.backTop:hover{
+	background:rgba(102,102,102,.9);
+}
+.backTop:hover::after{
+	color:#fff;
+	content:'回到顶部';
+	display: block;
+	line-height: 20px;
+	text-align: center;
+}
+/*.sticky{
+	z-index: 9;
+	position: sticky;
+	top:0;
+}*/
+
+/*滚动轮播图*/
+.banner .banner-view{
+	position: relative;
+	width: 542px;
+	height:415px;
+	overflow: hidden;
+}
+.banner-view .img-wrap{
+	width:9999px;
+	height:415px;
+	position: absolute;
+	left:0;
+	transition: all .5s;
+}
+.banner-view .img-wrap img{
+	display: block;
+	float: left;
+}
+.banner-view .img-btn div{
+	height: 40px;
+	width: 40px;
+	background:url(../img/ui-slider-arrow.png) no-repeat -40px 0;
+	position: absolute;
+	right: 0;
+	top:50%;
+	margin-top: -20px;
+}
+.banner-view .img-btn div:hover{
+	background-color:rgba(102,102,102,.8);
+}
+.banner-view .img-btn .img-pre{
+	background-position-x:0;
+	left:0;
+}
+.banner-view .dots{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left:-33px;
+}
+.banner-view .dots span{
+	display: block;
+	float: left;
+	margin: 5px;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: rgba(7, 17, 27, 0.4);
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7) inset;
+	cursor: pointer;
+}
+.banner-view .dots .focus{
+	box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+	background-color: #fff;
+}

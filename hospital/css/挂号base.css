@@ -1,0 +1,326 @@
+/*header部分-----------------------------------------------------------------------*/
+/*导航栏*/
+.headNav{
+	line-height: 36px;
+	color:#8a8a8a;
+	font-size: 12px;
+	font-weight: bold;
+}
+.headNav .call{
+	background: url(../img/icon-call.png) no-repeat center left;
+	padding-left: 20px;
+}
+.headNav .logReg a{
+	color:#4eb4e7;
+}
+/*logo*/
+.logo img{
+	height:99px;
+	width:500px;
+}
+.logo .search{
+	width:326px;
+	height:38px;
+	margin:31px 0;
+	background: url(../img/ui-search.jpg) center no-repeat ;
+}
+/*section主体部分---------------------------------------------------------------------*/
+/*top部分*/
+/*导航栏*/
+.section .topNav ul{
+	height:36px;
+	display: block;
+}
+.section .topNav a{
+	display: block;
+	height:36px;
+	line-height: 36px;
+	text-align: center;
+	width: 80px;
+	padding:0 17px;
+	color: #fff;
+}
+.section .topNav a:hover{
+	color:#EFF3F4;
+}
+.section .topNav a.famous{
+	width:100px;
+}
+.section .topNav a.all{
+	width: 156px;
+	margin-right:15px;
+	color: #fff;
+}
+/*内容区*/
+
+.depart .dep{
+	height: 36px;
+	line-height: 36px;
+	width:180px;
+	font-size: 12px;
+	color:#fff;
+	padding:0 5px;
+}
+.dep .icon{
+	position: relative;
+	padding-left:30px;
+	font-size: 14px;
+}
+.dep .icon::before{
+	position: absolute;
+	top: 6px;
+	left: 0;
+	content:'';
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/icon-menu.jpg) no-repeat -22px 0;
+}
+.dep .exm{
+	opacity: .8;
+}
+/*/*banner图*/
+.banner img{
+	width: 542px;
+	height:415px;
+}
+/*topAside侧边栏*/
+.topAside .search{
+	background-color: #fafafa;
+	height:250px;
+	margin-bottom: 15px;
+}
+.topAside .search .content,
+.topAside .help .content{
+	padding:17px 40px;
+}
+.topAside .search .content p,
+.topAside .help .content p{
+	position: relative;
+	text-align: center;
+	color:#fecd09;
+	margin-bottom: 15px;
+}
+.topAside .search .content p::before,
+.topAside .help .content p::before{
+	position: absolute;
+	left: 22px;
+	top:0;
+	content: '';
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../img/icon-help.png) no-repeat 0 0;
+}
+.topAside .search .content select{
+	color:#666;
+	height: 25px;
+	width: 170px;
+	border:1px solid #fecd09;
+	margin-bottom: 10px;
+	transition: box-shadow .5s;
+	outline: none;
+}
+.topAside .search .content select:hover{
+	box-shadow:0 0 5px #fecd09;
+}
+.topAside .search .content .submit{
+	margin:5px auto;
+	background-color: #fecd09;
+	border-radius: 5px;
+	width: 108px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size:13px;
+	color: #fff;
+	cursor: pointer;
+}
+.topAside .help{
+	background-color: #fafafa;
+	height:150px;
+}
+.topAside .help .content p{
+	color:#58bbf0;
+}
+.topAside .help .content p::before{
+	background-position-y:-22px; 
+}
+.topAside .help .content .helps{
+	height: 30px;
+	line-height: 30px;
+	width:80px;
+	text-align: center;
+}
+.topAside .help .content a{
+	font-size: 13px;
+	color:#58bbf0;
+}
+/*bottom部分-------------------------------------------------------------------------------*/
+/*导航栏*/
+.bottom .bottomLeft .bottomNav{
+	height: 34px;
+	background-color: #f4f6fa;
+}
+.bottomNav a{
+	display: inline-block;
+	text-align: center;
+	line-height: 34px;
+	height: 34px;
+	width: 112px;
+	color: #60bff2;
+}
+.bottom .bottomLeft .bottomContent{
+	border:1px solid #fef6fa;
+}
+.bottom .bottomLeft .bottomContent .selectNav{
+	height: 40px;
+	border-bottom: 1px solid #fef6fa;
+}
+.bottom .bottomLeft .bottomContent .selectNav{
+	margin:10px;
+}
+.selectNav .city{
+	display: inline-block;
+	color: #8b8b8c;
+	font-size: 11px;
+	padding:5px 10px;
+}
+/*图列表部分*/
+.imgList{
+	margin:5px 0;
+}
+.itemLeft,
+.itemRight{
+	width: 350px;
+	margin:0 10px;
+}
+.imgList .item{
+	width: 350px;
+	height: 100px;
+	position: relative;
+	font-size: 11px;
+	color: #8a8a8a;
+	margin:10px 0;
+}
+.imgList .item .item-word{
+	position: absolute;
+	left: 120px;
+	top:0;
+	margin-top: 10px;
+}
+.imgList .item .item-word a{
+	display: inline-block;
+	font-size: 14px;
+	color: #5084c4;
+}
+.imgList .item .item-word .item-inf{
+	margin-bottom: 8px;
+}
+.imgList .item img{
+	height: 100px;
+	width: 110px;
+}
+/*文字列表部分*/
+.wordList p{
+	height: 36px;
+	line-height: 36px;
+	font-size: 13px;
+	color:#8b8b8c;
+	border-bottom: 1px dashed #979797;
+}
+.wordList .more{
+	height:20px;
+	line-height:20px;
+	width:100px;
+	margin:16px auto;
+	text-align: center;
+}
+.wordList a{
+	font-size:14px;
+	color:#5084c4;
+}
+/*bottomRight侧边栏*/
+.bottomRight .last,
+.bottomRight .stop{
+	position: relative;
+	border:1px solid #f4f6fa;
+	height:238px;
+	width: 250px;
+}
+.bottomRight .tit{
+	height:38px;
+	color:#fecd09;
+	background-color: #f4f6fc;
+}
+.bottomRight .tit p{
+	position: absolute;
+	top:10px;
+	left:20px;
+}
+.bottomRight .tit .mor{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	color:#8b8b8c;
+	font-size: 12px;
+}
+.bottomRight .cont{
+	height:160px;
+	width: 210px;
+	margin:10px auto;
+}
+.bottomRight .cont a{
+	position: relative;
+	color:#979797;
+	display: block;
+	font-size: 12px;
+	height:30px;
+	line-height: 30px;
+	padding-left:18px;
+}
+.bottomRight .cont a::before{
+	position: absolute;
+	top:8px;
+	left: 0;
+	content: '';
+	display: block;
+	height:20px;
+	width:15px;
+	background: url(../img/list-yellow.jpg) 0 0;
+}
+.bottomRight .cont a:nth-child(2)::before{
+	background-position-y:-29px;
+}
+.bottomRight .cont a:nth-child(3)::before{
+	background-position-y:-58px;
+}
+.bottomRight .cont a:nth-child(4)::before{
+	background-position-y:-85px;
+}
+.bottomRight .cont a:nth-child(5)::before{
+	background-position-y:-115px;
+}
+.bottomRight .cont a:nth-child(6)::before{
+	background-position-y:-145px;
+}
+/*stop侧边框*/
+.bottomRight .stop{
+	margin-top: 10px;
+}
+.bottomRight .stop .tit p{
+	color:#4ab4ed;
+}
+.bottomRight .stop .cont a::before{
+	background-image: url(../img/list-blue.jpg);
+}
+
+/*footer-----------------------------------------------------------------------*/
+.footer .copy{
+	width:500px;
+	height:100px;
+	line-height: 100px;
+	text-align: center;
+	margin:0 auto;
+	font-size: 8px;
+}

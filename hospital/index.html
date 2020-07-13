@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>医院统一预约挂号平台</title>
+	<link rel="stylesheet" type="text/css" href="css/挂号layout.css">
+	<link rel="stylesheet" type="text/css" href="css/挂号base.css">
+	<link rel="stylesheet" type="text/css" href="css/挂号ui.css">
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+	<script src="js/jQuery.js"></script>
+	<meta name = "format-detection" content = "telephone=no">
+	<!-- ios手机上长数字识别为电话，颜色变为蓝色可点击的链接，可在head中加入以上 -->
+</head>
+<body>
+	<header id="header" class="header">
+			<nav class="headNav sticky clear">
+				<div class="wrap">
+					<p class="call left">010-114/116114电话预约</p>
+					<p class="logReg right">欢迎来到城市医院预约挂号统一平台&nbsp;请&nbsp;&nbsp;
+						<a href="#">登录</a>&nbsp;&nbsp;
+						<a href="#">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#">帮助中心</a>
+					</p>
+				</div>
+			</nav>
+			<div class="logo">
+				<div class="wrap">
+					<img class="left" src="img/logo.png">
+
+					<div class="search right">
+						<div class="selected">医院</div>
+						<ul class="select-list">
+							<li><a href="#">科室</a></li>
+							<li><a href="#">疾病</a></li>
+							<li><a href="#">医院</a></li>
+						</ul>
+						<input type="text" name="search" placeholder="请输入搜索内容">
+						<a class="submit" href="#"></a>
+					</div>
+
+				</div>
+			</div>
+	</header>
+
+	<section id="section" class="section">
+		<nav class="topNav">
+			<ul class="wrap clear">
+				<a href="#" class="left all current">全部科室</a>
+				<a href="hospital.html" class="left hospital">按医院挂号</a>
+				<a href="#" class="left department">按科室挂号</a>
+				<a href="#" class="left disease">按疾病挂号</a>
+				<a href="#" class="left latest">最新公告</a>
+				<a href="#" class="right famous">社会知名医院</a>
+			</ul>
+		</nav>
+		<div class="top-content">
+			<div class="sec sec1">
+				<section class="top">
+					<div class="topContent wrap">
+						<div class="depart">
+							<div class="dep clear">
+								<div class="icon left">内科</div>
+								<div class="exm right">高血压&nbsp;冠心病</div>
+								<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">内科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">内科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">外科</div>
+								<div class="exm right">肾结石&nbsp;脑外伤</div>
+								<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">外科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">外科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">妇产科</div>
+								<div class="exm right">盆腔炎&nbsp;不孕不育</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">妇产科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">妇产科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">生殖中心</div>
+								<div class="exm right">男性不育</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">生殖中心</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">生殖中心常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">儿科</div>
+								<div class="exm right">抽动症&nbsp;小儿感冒</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">儿科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">儿科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">骨外科</div>
+								<div class="exm right">关节炎&nbsp;骨折</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">骨外科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">骨外科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">眼科</div>
+								<div class="exm right">近视&nbsp;白内障</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">眼科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">眼科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">口腔科</div>
+								<div class="exm right">口腔修复&nbsp;牙痛</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">口腔科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">口腔科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">耳鼻咽喉头颈科</div>
+								<div class="exm right">鼻炎</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">耳鼻喉科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+									<div class="menu-list-group">
+										<div class="menu-list-title">耳鼻喉科常见</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">肿瘤科</div>
+								<div class="exm right">癌痛</div>
+														<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">肿瘤科</div>
+										<div class="menu-list-details">
+											<a href="#1">心脑血管科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">心血管内科</a>
+											<a href="#1">神经内科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+											<a href="#1">内分泌科</a>
+											<a href="#1">血液科</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dep clear">
+								<div class=" icon left">其他科室</div>
+								<div class="exm right"></div>
+								<div class="menu-list">
+									<div class="menu-list-group">
+										<div class="menu-list-title">其他科室</div>
+									</div>
+									
+								</div>
+							</div>
+								
+							</div>
+						<div class="banner">
+							<div class="banner-view">
+								<div class="img-wrap">
+									<a href="#"><img src="img/banner_3.jpg"></a>
+									<a href="#"><img src="img/banner_2.jpg"></a>
+									<a href="#"><img src="img/banner_1.jpg"></a>
+								</div>
+								<div class="img-btn">
+									<div class="img-pre"></div>
+									<div class="img-next"></div>
+								</div>
+								<div class="dots">
+									<span class="focus"></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<aside class="topAside">
+							<div class="search">
+								<div class="content cascading">
+									<p>快速预约</p>
+									<div class="line">
+										<select name="医院地区" dataSearch="getDistinctArea" dataWhere="">
+											<option value="1">医院地区</option>
+										</select>
+									</div>
+									<div class="line">
+										<select name="医院等级" dataSearch="getLeveByArea" dataWhere="">
+											<option value="2">医院等级</option>
+										</select>
+									</div>
+									<div class="line">
+										<select name="医院名称" dataSearch="getNameByAreaAndLevel" dataWhere="">
+											<option value="3">医院名称</option>
+										</select>
+									</div>
+									<div class="line">
+										<select name="医院科室" dataSearch="getDepartmentArrByHospitalName" dataWhere="">
+											<option value="4">医院科室</option>
+										</select>
+									</div>
+									<div class="submit">快速查询</div>
+								</div>
+							</div>
+							<div class="help">
+								<div class="content clear">
+									<p>帮助中心</p>
+									<div>
+										<div class="helps left"><a href="#">账号指南</a></div>
+										<div class="helps right"><a href="#">预约指南</a></div>
+										<div class="helps left"><a href="#">账号找回</a></div>
+										<div class="helps right"><a href="#">常见问题</a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</section>
+				<section class="bottom wrap clear">
+					<section class="bottomLeft left">
+						<nav class="bottomNav">
+							<a class="hos bottom-focus">医院</a>
+							<a class="dep">科室</a>
+						</nav>
+						<div>
+							<div class="bottomContent hoscont">
+								<nav class="selectNav">
+									<div class="city bottom-focus">全部</div>
+									<div class="city">东城区</div>
+									<div class="city">西城区</div>
+									<div class="city">朝阳区</div>
+									<div class="city">丰台区</div>
+									<div class="city">石景山区</div>
+									<div class="city">海淀区</div>
+									<div class="city">门头沟区</div>
+									<div class="city">房山区</div>
+									<div class="city">其他</div>
+								</nav>
+								<div class="selectContent">
+									<div class="select se1">
+										<div class="imgList clear">
+											<div class="itemLeft left">
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-1.jpg">
+												</div>
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-2.jpg">
+												</div>
+											</div>
+											<div class="itemRight right">
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-3.jpg">
+												</div>
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-4.jpg">
+												</div>
+											</div>
+										</div>
+										<div class="wordList">
+											<div class="clear">
+												<div class="itemLeft left">
+													<p class="clear">首都儿科研究所附属儿科医院<span class="right">【三级甲等】</span></p>
+													<p class="clear">首都儿科研究所附属儿科医院<span class="right">【三级甲等】</span></p>
+													<p class="clear">首都儿科研究所附属儿科医院<span class="right">【三级甲等】</span></p>
+												</div>
+												<div class="itemRight right">
+													<p class="clear">首都儿科研究所附属儿科医院<span class="right">【三级甲等】</span></p>
+													<p class="clear">首都儿科研究所附属儿科医院<span class="right">【三级甲等】</span></p>
+													<p class="clear">首都儿科研究所附属儿科医院<span class="right">【三级甲等】</span></p>
+												</div>
+											</div>
+											<div class="more">
+												<a href="#">更多医院</a>
+											</div>
+										</div>
+									</div>
+									<div class="select se2">
+										<div class="imgList clear">
+											<div class="itemLeft left">
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-2.jpg">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select se3">
+										<div class="imgList clear">
+											<div class="itemLeft left">
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-3.jpg">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select se4">
+										<div class="imgList clear">
+											<div class="itemLeft left">
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-4.jpg">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select se5">
+										<div class="imgList clear">
+											<div class="itemLeft left">
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-5.jpg">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="select se6">
+										<div class="imgList clear">
+											<div class="itemLeft left">
+												<div class="item">
+													<div class="item-word">
+														<a class="item-inf" href="#">北京协和医院</a>
+														<p class="item-level right">【三级甲等】</p>
+														<p class="item-inf">电话：东院咨询台：010-69155564…</p>
+														<p>地址：[东院]北京市东城区帅府园一号[西院]北京市西城区大木仓…</p>
+													</div>
+													<img class="left" src="img/hospital-6.jpg">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bottomContent depcont">科室内容</div>
+						</div>
+					</section>
+					<aside class="bottomRight right">
+						<div class="last">
+							<div class="tit"><p>最新公告</p><a class="mor" href="#">|&nbsp;更多</a></div>
+							<div class="cont">
+								<a href="#" title="">阜外医院特需门诊暂停更新号源通...</a>
+								<a href="#" title="">防护策略升级通知</a>
+								<a href="#" title="">阜外医院特需门诊暂停更新号源通...</a>
+								<a href="#" title="">防护策略升级通知</a>
+								<a href="#" title="">阜外医院特需门诊暂停更新号源通...</a>
+								<a href="#" title="">防护策略升级通知</a>
+							</div>
+						</div>
+						<div class="stop">
+							<div class="tit"><p>停诊公告</p><a class="mor" href="#">|&nbsp;更多</a></div>
+								<div class="cont">
+								<a href="#" title="">首都医科大学附属北京安贞医院消..</a>
+								<a href="#" title="">北京安贞医院妇</a>
+								<a href="#" title="">首都医科大学附属北京安贞医院消..</a>
+								<a href="#" title="">北京安贞医院妇</a>
+								<a href="#" title="">首都医科大学附属北京安贞医院消..</a>
+								<a href="#" title="">北京安贞医院妇</a>
+							</div>
+						</div>
+					</aside>
+				</section>
+			</div>
+
+		</div>
+	</section>
+	<footer id="footer" class="footer">
+		<p class="copy">Copyright&nbsp;&copy;&nbsp;2017慕课网版权所有</p>
+	</footer>
+	<script src="js/挂号ui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/data.js" type="text/javascript"></script>
+</body>
+</html>
